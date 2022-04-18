@@ -38,7 +38,7 @@ app.use(
 app.use('/api', cocheRoute)
 
 // PORT
-const port = process.env.PORT || 8000
+const port = process.env.PORT || 27017
 
 app.listen(port, () => {
   console.log('Connected to port ' + port)
