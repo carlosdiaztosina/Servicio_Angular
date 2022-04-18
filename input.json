@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1",
+    "nombre": "Ibiza",
+    "marca": "Seat",
+    "tipo": "C",
+    "matricula" : "0000AAA"
+  },
+    {
+    "id": "2",
+    "nombre": "Focus",
+    "marca": "Ford",
+    "tipo": "A",
+    "matricula" : "1001BAB"
+  }
+]
