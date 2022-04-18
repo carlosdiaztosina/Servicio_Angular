@@ -1,0 +1,32 @@
+<!-- Toolbar -->
+<mat-toolbar color="primary" class="header">
+  <div>Coches</div>
+  <span class="nav-tool-items">
+    <mat-icon (click)="sidenav.toggle()" class="hamburger">menu</mat-icon>
+  </span>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <!-- Sidenav -->
+  <mat-sidenav
+    #sidenav
+    [mode]="isBiggerScreen() ? 'over' : 'side'"
+    [(opened)]="opened"
+    [fixedInViewport]="true"
+    [fixedTopGap]
+  >
+    <mat-nav-list>
+      <a mat-list-item routerLinkActive="active" routerLink="/add-coche">
+        <mat-icon>add</mat-icon> Añadir Coche
+      </a>
+      <a mat-list-item routerLinkActive="active" routerLink="/coches-list">
+        <mat-icon>format_list_bulleted</mat-icon> Ver Coches
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <!-- Main content -->
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
